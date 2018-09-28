@@ -26,4 +26,38 @@
 html{
     font-size:18px;
     font-family:"Helvetica", sans-serif;
+    color:white;
+    border: 2px solid skyblue;
+    background-color:lime;
+}
+.sitecontainer{
+    width:960px;
+    background-color:grey;
+}
+header ,
+.banner , 
+footer , 
+.container-b , 
+p
+{
+    background-color:black;
+}
+p , span {
+    font-size:1rem;
+}
+.logo img{
+    height:1.5rem;
+    padding-left:0.5rem;
+}
+.logo p{
+    padding:0.66rem 1rem;  
+}
+.mainbanner {
+    background-image:url("./imgs/moto.jpeg");
+    background-size:cover;
+    background-repeat:no-repeat;
+    height:25rem;   
+}
+nav{
+    background-color:firebrick;
 }
