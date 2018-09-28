@@ -1,29 +1,126 @@
-.container-a{
+.container_a{
     display:flex;
     flex-direction:column;
     align-items:center;
-    border: 4px solid grey;
+    justify-content: center;   
 }
-.container-b{
+.container_b , footer{
     display:flex;
     flex-direction:column;
     align-items:flex-start;
-    justify-content:center;
-    border: 3px solid pink;
+    justify-items: space-around;
 }
-.container-c{
+.container_c{
     display:flex;
-    justify-items:flex-start; 
-    align-items:center;
-    border: 2px solid green
+    justify-content:space-between;
 }
-.container-d{
+.container_d{
     display:flex;
-    justify-content: space-between;
-    border: 1px solid red;
+    justify-content: flex-start;
+    align-items: center;
 }
-
-html{
+html , .copyright , a{
     font-size:18px;
     font-family:"Helvetica", sans-serif;
+    color:white;
+}
+header , section ,
+nav , section-b ,
+footer {
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    width:100%; 
+}
+.logo , .bannersection , .navbar ,
+.product_grid , .locationhours , .copyright {
+    width:960px;
+}
+header , .banner ,
+span , footer {
+    background-color:black;
+}
+section{
+    justify-content: center;
+    background-image:url("./imgs/moto.jpeg");
+    background-size:cover;
+    background-position: center;
+    background-repeat:no-repeat;
+}
+nav , .navbar span{
+    background-color:firebrick;
+}
+section-b{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: center; 
+    background-color:white;
+}
+header img{
+    height:1.5rem;
+    padding-left:0.5rem;
+}
+header p {
+    padding:0.66rem 1rem;
+    color:white;
+}
+.bannersection{
+    height:25rem;
+}
+.banner{
+    width:20rem;
+    margin-top:9rem;
+    padding:2rem 3rem;
+    font-weight: bold;
+    
+}
+.banner p {
+    font-size:1rem;
+    color:white;
+}
+.banner h1{
+    font-size:2rem;
+    padding-top:0.25rem;
+}
+.navbar{
+    padding: 0.75rem 0 ;  
+}
+a{
+    text-decoration-line: none;
+}
+
+.product {
+    margin:3rem 0;
+    width: 30%;
+    border: 4px solid black;
+}
+.product img{
+    height:9rem;
+    padding: 2rem ;
+}
+.glasses img{
+    width:80%;
+}
+.text{ 
+    display: block;
+    padding:0.5rem;
+    text-align:center;
+    width:96%;
+} 
+.info{
+    width:35%;
+}
+.info span{
+    display:block; 
+    padding:1rem 2rem; 
+}
+.digits{
+    margin-bottom:4rem;
+}
+p {
+    color:black;
+}    
+footer p{   
+    padding: 5rem 0;  
 }
