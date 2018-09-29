@@ -51,10 +51,6 @@ nav , .navbar span{
     background-color:firebrick;
 }
 section-b{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content: center; 
     background-color:white;
 }
 header img{
@@ -72,8 +68,7 @@ header p {
     width:20rem;
     margin-top:9rem;
     padding:2rem 3rem;
-    font-weight: bold;
-    
+    font-weight: bold;  
 }
 .banner p {
     font-size:1rem;
@@ -89,7 +84,6 @@ header p {
 a{
     text-decoration-line: none;
 }
-
 .product {
     margin:3rem 0;
     width: 30%;
@@ -123,4 +117,114 @@ p {
 }    
 footer p{   
     padding: 5rem 0;  
+}
+.tablet{
+    display: none;
+}
+#bannerimg{
+    display:none;
+}
+@media only screen and (max-width:1024px){
+    .logo , .bannersection ,
+    .navbar , .product_grid ,
+    .locationhours , .copyright {
+        width:80%;
+    }   
+    header p {
+        font-size:1.1rem;
+        padding:2rem 1rem 2rem 0.5rem;
+    }
+    .banner{ 
+         width:17rem; 
+         padding-right:5%;
+     } 
+     
+    .product{
+        width:47%
+    }
+    .glasses {
+        display:none;
+    }
+    .info{
+        width:35%;
+    }
+    .navbar {
+        display:none;
+    }
+    .tablet{
+        display:block;
+        text-align:center;
+        padding: 0.75rem 0 ;  
+    }    
+    
+}
+@media only screen and (max-width:470px){
+    
+    .logo , .bannersection ,
+    .navbar , .product_grid ,
+    .locationhours , .copyright {
+        width:100%;
+    }
+    .logo{
+        justify-content: center;
+        padding: 1.5rem  0rem;
+    }
+    header p {
+        display:none;  
+    }
+    .bannersection{
+        display: flex;
+        flex-direction: column;
+       height:20rem;
+    }
+    #bannerimg{
+        display:block;
+        height: 15rem;
+    }
+    .banner{
+        display: block;
+        height:5rem;
+        font-weight:bold;
+        margin:0;
+        width: 82.5%;
+        margin-bottom: 0;
+    }
+    .banner h1{
+        font-size:2rem;
+        padding-top:1rem;
+        padding:0;
+    }
+    nav{
+        display: block;
+        margin-top:4rem;
+    }
+    section-b{
+        display: flex;
+        flex-direction: column;
+        width:100%;
+    }
+    .locationhours , .product_grid{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .info {
+        width:90%;  
+        margin-top:0.5rem;
+    }
+    .pen{
+        width:88.132%;
+    }
+    .watch{
+        display:none;
+    }
+    .digits{
+        margin-bottom:0.5rem;
+    }
+    footer{
+        margin-top:4rem;
+    }
+    footer p{   
+        text-align: center;
+    }
 }
