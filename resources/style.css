@@ -1,230 +1,247 @@
-.container_a{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content: center;   
+.container_a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-.container_b , footer{
-    display:flex;
-    flex-direction:column;
-    align-items:flex-start;
-    justify-items: space-around;
-}
-.container_c{
-    display:flex;
-    justify-content:space-between;
-}
-.container_d{
-    display:flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-html , .copyright , a{
-    font-size:18px;
-    font-family:"Helvetica", sans-serif;
-    color:white;
-}
-header , section ,
-nav , section-b ,
+.container_b,
 footer {
-    display:flex;
-    flex-direction:column;
-    align-items: center;
-    width:100%; 
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-items: space-around;
 }
-.logo , .bannersection , .navbar ,
-.product_grid , .locationhours , .copyright {
-    width:960px;
+.container_c {
+  display: flex;
+  justify-content: space-between;
 }
-header , .banner ,
-span , footer {
-    background-color:black;
+.container_d {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
-section{
-    justify-content: center;
-    background-image:url("./imgs/moto.jpeg");
-    background-size:cover;
-    background-position: center;
-    background-repeat:no-repeat;
+html,
+.copyright,
+a {
+  font-size: 18px;
+  font-family: "Helvetica", sans-serif;
+  color: white;
 }
-nav , .navbar span{
-    background-color:firebrick;
+header,
+section,
+nav,
+section-b,
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
-section-b{
-    background-color:white;
+.logo,
+.bannersection,
+.navbar,
+.product_grid,
+.locationhours,
+.copyright {
+  width: 960px;
 }
-header img{
-    height:1.5rem;
-    padding-left:0.5rem;
+header,
+.banner,
+span,
+footer {
+  background-color: black;
+}
+section {
+  justify-content: center;
+  background-image: url("./imgs/moto.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+nav,
+.navbar span {
+  background-color: firebrick;
+}
+section-b {
+  background-color: white;
+}
+header img {
+  height: 1.5rem;
+  padding-left: 0.5rem;
 }
 header p {
-    padding:0.66rem 1rem;
-    color:white;
+  padding: 0.66rem 1rem;
+  color: white;
 }
-.bannersection{
-    height:25rem;
+.bannersection {
+  height: 25rem;
 }
-.banner{
-    width:20rem;
-    margin-top:9rem;
-    padding:2rem 3rem;
-    font-weight: bold;  
+.banner {
+  width: 20rem;
+  margin-top: 9rem;
+  padding: 2rem 3rem;
+  font-weight: bold;
 }
 .banner p {
-    font-size:1rem;
-    color:white;
+  font-size: 1rem;
+  color: white;
 }
-.banner h1{
-    font-size:2rem;
-    padding-top:0.25rem;
+.banner h1 {
+  font-size: 2rem;
+  padding-top: 0.25rem;
 }
-.navbar{
-    padding: 0.75rem 0 ;  
+.navbar {
+  padding: 0.75rem 0;
 }
-a{
-    text-decoration-line: none;
+a {
+  text-decoration-line: none;
 }
 .product {
-    margin:3rem 0;
-    width: 30%;
-    border: 4px solid black;
+  margin: 3rem 0;
+  width: 30%;
+  border: 4px solid black;
 }
-.product img{
-    height:9rem;
-    padding: 2rem ;
+.product img {
+  height: 9rem;
+  padding: 2rem;
 }
-.glasses img{
-    width:80%;
+.glasses img {
+  width: 80%;
 }
-.text{ 
-    display: block;
-    padding:0.5rem;
-    text-align:center;
-    width:96%;
-} 
-.info{
-    width:35%;
+.text {
+  display: block;
+  padding: 0.5rem;
+  text-align: center;
+  width: 96%;
 }
-.info span{
-    display:block; 
-    padding:1rem 2rem; 
+.info {
+  width: 35%;
 }
-.digits{
-    margin-bottom:4rem;
+.info span {
+  display: block;
+  padding: 1rem 2rem;
+}
+.digits {
+  margin-bottom: 4rem;
 }
 p {
-    color:black;
-}    
-footer p{   
-    padding: 5rem 0;  
+  color: black;
 }
-.tablet{
+footer p {
+  padding: 5rem 0;
+}
+.tablet {
+  display: none;
+}
+#bannerimg {
+  display: none;
+}
+@media only screen and (max-width: 1024px) {
+  .logo,
+  .bannersection,
+  .navbar,
+  .product_grid,
+  .locationhours,
+  .copyright {
+    width: 80%;
+  }
+  header p {
+    font-size: 1.1rem;
+    padding: 2rem 1rem 2rem 0.5rem;
+  }
+  .banner {
+    width: 17rem;
+    padding-right: 5%;
+  }
+
+  .product {
+    width: 47%;
+  }
+  .glasses {
     display: none;
+  }
+  .info {
+    width: 35%;
+  }
+  .navbar {
+    display: none;
+  }
+  .tablet {
+    display: block;
+    text-align: center;
+    padding: 0.75rem 0;
+  }
 }
-#bannerimg{
-    display:none;
-}
-@media only screen and (max-width:1024px){
-    .logo , .bannersection ,
-    .navbar , .product_grid ,
-    .locationhours , .copyright {
-        width:80%;
-    }   
-    header p {
-        font-size:1.1rem;
-        padding:2rem 1rem 2rem 0.5rem;
-    }
-    .banner{ 
-         width:17rem; 
-         padding-right:5%;
-     } 
-     
-    .product{
-        width:47%
-    }
-    .glasses {
-        display:none;
-    }
-    .info{
-        width:35%;
-    }
-    .navbar {
-        display:none;
-    }
-    .tablet{
-        display:block;
-        text-align:center;
-        padding: 0.75rem 0 ;  
-    }    
-    
-}
-@media only screen and (max-width:470px){
-    
-    .logo , .bannersection ,
-    .navbar , .product_grid ,
-    .locationhours , .copyright {
-        width:100%;
-    }
-    .logo{
-        justify-content: center;
-        padding: 1.5rem  0rem;
-    }
-    header p {
-        display:none;  
-    }
-    .bannersection{
-        display: flex;
-        flex-direction: column;
-       height:20rem;
-    }
-    #bannerimg{
-        display:block;
-        height: 15rem;
-    }
-    .banner{
-        display: block;
-        height:5rem;
-        font-weight:bold;
-        margin:0;
-        width: 82.5%;
-        margin-bottom: 0;
-    }
-    .banner h1{
-        font-size:2rem;
-        padding-top:1rem;
-        padding:0;
-    }
-    nav{
-        display: block;
-        margin-top:4rem;
-    }
-    section-b{
-        display: flex;
-        flex-direction: column;
-        width:100%;
-    }
-    .locationhours , .product_grid{
-        display:flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .info {
-        width:90%;  
-        margin-top:0.5rem;
-    }
-    .pen{
-        width:88.132%;
-    }
-    .watch{
-        display:none;
-    }
-    .digits{
-        margin-bottom:0.5rem;
-    }
-    footer{
-        margin-top:4rem;
-    }
-    footer p{   
-        text-align: center;
-    }
+@media only screen and (max-width: 470px) {
+  .logo,
+  .bannersection,
+  .navbar,
+  .product_grid,
+  .locationhours,
+  .copyright {
+    width: 100%;
+  }
+  .logo {
+    justify-content: center;
+    padding: 1.5rem 0rem;
+  }
+  header p {
+    display: none;
+  }
+  .bannersection {
+    display: flex;
+    flex-direction: column;
+    height: 20rem;
+  }
+  #bannerimg {
+    display: block;
+    height: 15rem;
+  }
+  .banner {
+    display: block;
+    height: 5rem;
+    font-weight: bold;
+    margin: 0;
+    width: 82.5%;
+    margin-bottom: 0;
+  }
+  .banner h1 {
+    font-size: 2rem;
+    padding-top: 1rem;
+    padding: 0;
+  }
+  nav {
+    display: block;
+    margin-top: 4rem;
+  }
+  section-b {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .locationhours,
+  .product_grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .info {
+    width: 90%;
+    margin-top: 0.5rem;
+  }
+  .pen {
+    width: 88.132%;
+  }
+  .watch {
+    display: none;
+  }
+  .digits {
+    margin-bottom: 0.5rem;
+  }
+  footer {
+    margin-top: 4rem;
+  }
+  footer p {
+    text-align: center;
+  }
 }
